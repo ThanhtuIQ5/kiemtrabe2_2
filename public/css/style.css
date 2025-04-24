@@ -1,0 +1,103 @@
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+nav ul {
+    position: relative;
+    display: inline-flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+.footer::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+.Form-login{
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    border: 2px solid black;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.Form-login form .text-box {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Form-login form .text-box label {
+    width: 120px;
+}
+.Form-login form .text-box input {
+    flex-grow: 1;
+    padding: 5px;
+}
+.Form-login form .button-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.Form-login form .button-box a {
+    color: blue;
+}
+.Form-login form .button-box .submit{
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remember-box {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-left: 140px;
+}
